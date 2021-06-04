@@ -1,0 +1,86 @@
+.main__content-title{
+    font-size: 1.25em;
+}
+
+.main__content-form{
+    margin: 1em 0 1em 0;
+}
+
+.main__content-input{
+    padding: 0.5em;
+    font-size: 1em;
+    color: #126e82;
+    font-weight: bold;
+}
+
+.main__content-inputButton{
+    padding: 0.5em;
+    font-size: 1em;
+    background: rgb(18,110,130);
+    background: linear-gradient(0deg, rgba(18,110,130,1) 29%, rgba(54,169,194,1) 100%);
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+.main__content-inputButton:hover{
+    cursor: pointer;
+    background: rgb(54,169,194);
+    background: linear-gradient(0deg, rgba(54,169,194,1) 12%, rgba(18,110,130,1) 100%);
+}
+
+.main__content-button{
+    padding: 0.5em;
+    font-size: 1em;
+    background: rgb(18,110,130);
+    background: linear-gradient(0deg, rgba(18,110,130,1) 29%, rgba(54,169,194,1) 100%);
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5%;
+    margin-bottom: 5%;
+    margin-top: 1em;
+}
+
+.main__content-button:hover{
+    cursor: pointer;
+    background: rgb(54,169,194);
+    background: linear-gradient(0deg, rgba(54,169,194,1) 12%, rgba(18,110,130,1) 100%);
+}
+
+.main__content-participants{
+    display: none;
+    width: 100%;
+    border-top: 2px solid #126e82;
+}
+
+.main__content-participants.active{
+    display: block;
+}
+
+.main__content-participants h2{
+    margin-top: 1em;
+    font-family: 'Yellowtail', cursive;
+    font-size: 2.5em;
+    font-weight: lighter;
+}
+
+.main__content-participants h3{
+    color: #126e82;
+}
+
+.main__content-prize{
+    font-weight: bold;
+}
+
+.main__content-list{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.main__content-expire{
+    font-weight: bold;
+}

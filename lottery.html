@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotería</title>
+    <link rel="icon" href="img/dice_black.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lottery.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <a href="index.html"><div class="navbar__logo-img"></div></a>
+            </div>
+            <a href="#" class="navbar__button">
+                <span class="navbar__button-line"></span>
+                <span class="navbar__button-line"></span>
+                <span class="navbar__button-line"></span>
+            </a>
+            <div class="navbar__options">
+                <ul class="navbar__options__list">
+                    <li class="navbar__options__list-item"><a href="lottery.html">Lotería</a></li>
+                    <li class="navbar__options__list-item"><a href="prizes.html">Sorteos</a></li>
+                </ul>
+            </div>
+            <div class="navbar__user">
+                <ul class="navbar__user__list">
+                    <li class="navbar__user__list-item"><a href="sign_in.html">Iniciar Sesión</a></li>
+                    <li class="navbar__user__list-item"><a href="sign_up.html">Registrarse</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__header">
+            <div class="main__header-title">Lotería</div>            
+        </div>
+        <div class="main__content">
+            <h2 class="main__content-title">Ingrese el código de la lotería</h2>
+            <form class="main__content-form">
+                <input class="main__content-input" id="lotteryId" type="text">
+                <button class="main__content-inputButton" onclick="lottery();return false;">ACEPTAR</button>
+            </form>
+            <button class="main__content-button" id="newLottery-button">CREAR LOTERÍA</button>
+            <div class="main__content__lottery">
+                <h2 class="main__content__lottery-title">Lotería pública</h2>
+                <h3 class="main__content__lottery-subtitle">Pozo actual</h3>
+                <p class="main__content__lottery-prize">$ 10.000.000</p>
+                <h3 class="main__content__lottery-subtitle">Precio ticket</h3>
+                <p class="main__content__lottery-price">$ 10</p>
+                <h3 class="main__content__lottery-subtitle">Premios</h3>
+                <div class="main__content__lottery-list">
+                    <textarea>Reemplazar por lista de premios</textarea>
+                </div>
+                <h3 class="main__content__lottery-subtitle">Finaliza</h3>
+                <p class="main__content__lottery-expire">1/12/2021</p>
+                <button class="main__content-button" id="payment-button">COMPRAR TICKET</button>
+                <div class="main__content__payment">
+                    <div class="main__content__payment-container">
+                        <div class="main__content__payment-img" id="bitcoin"></div>
+                    </div>
+                    <div class="main__content__payment-container">
+                        <div class="main__content__payment-img" id="ethereum"></div>
+                    </div>
+                    <div class="main__content__payment-container">
+                        <div class="main__content__payment-img" id="tether"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo">
+            <div class="footer__logo-img"></div>
+        </div>
+        <div class="footer__contact">
+            <div class="footer__contact-title"><strong>Contacto:</strong></div>
+            <div class="footer__contact-text"><a href="mailto:ignacio.rene1994@gmail.com">ignacio.rene1994@gmail.com</a></div>
+        </div>
+        <div class="footer__social">
+            <div class="footer__social-text"><strong>Síguenos en nuestras redes sociales:</strong></div>
+            <div class="footer__social__icons">
+                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; Lotería
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="lottery.js"></script>
+</body>
+</html>

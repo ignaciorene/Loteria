@@ -1,0 +1,246 @@
+/* paleta de colores: https://colorhunt.co/palette/273466 */
+
+
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #132c33;
+}
+
+.navbar__logo-img{
+    height: 5em;
+    width: 5em;
+    margin: auto;
+    background-image: url("img/dice.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar__options__list{
+    list-style: none;
+    font-size: 1.75em;
+    font-family: 'Yellowtail', cursive;
+    color: #51c4d3;
+}
+
+.navbar__options__list-item{
+    display: inline-block;
+    padding-left: 5em;
+}
+
+.navbar__options__list-item a{
+    text-decoration: none;
+    color: #51c4d3;
+}
+
+.navbar__options__list-item a:hover{
+    text-decoration:underline;
+    color: white;
+}
+
+.navbar__options__list-item a:focus{
+    color: #51c4d3;
+}
+
+.navbar__user__list{
+    list-style: none;
+    font-size: 1em;
+    color: #51c4d3;
+}
+
+.navbar__user__list-item{
+    display: inline-block;
+    padding: 0.25em;
+    margin-left: 0.25em;
+}
+
+.navbar__user__list-item a{
+    text-decoration: none;
+    color: #51c4d3;
+}
+
+.navbar__user__list-item:hover a{
+    color: white;
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+
+.navbar__button{
+    position: absolute;
+    top: 1.5em;
+    right: 2em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.5em;
+    height: 2em;
+}
+
+.navbar__button-line{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main{
+    text-align: center;
+}
+
+.main__header{
+    font-size: 3em;
+    font-family: 'Yellowtail', cursive;
+    color: #126e82;
+}
+
+.main__header-title{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.main__content h2{
+    margin-top: 3em;
+    color: #126e82;
+}
+
+.main__content p{
+    word-wrap: break-word;
+    width: 50%;
+    margin: auto;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 5em;
+    padding-top: 1em;
+    background-color: #126e82;
+    color: #d8e3e7;
+}
+
+.footer__logo-img{
+    height: 4em;
+    width: 4em;
+    margin: auto;
+    background-image: url("img/dice.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer__contact{
+    padding-top: 1em;
+}
+
+.footer__contact-text{
+    padding-top: .5em;
+}
+
+.footer__contact a{
+    text-decoration: none;
+    color: #d8e3e7;
+}
+
+.footer__contact a:hover{
+    text-decoration: underline;
+}
+
+.footer__social-text{
+    padding-top: 1em;
+}
+
+.footer__social__icons{
+    padding-bottom: 2em;
+    border-bottom: 1.5px solid #d8e3e7;
+}
+
+.footer__social__icons i{
+    font-size: 2.5em;
+    margin: 1rem .5rem 0 0;
+    color: #d8e3e7;
+}
+
+@media (max-width:1024px) {
+    .navbar__button{
+        display: flex;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 1em;
+    }
+
+    .navbar__options{
+        width: 100%;
+    }
+
+    .navbar__user{
+        width: 100%;
+        margin-top: -1em;
+    }
+
+    .navbar__options__list{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar__user__list{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar__options__list-item{
+        padding-left: 0;
+        padding-top: 0.75em;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar__user__list-item{
+        padding-bottom: 1em;
+        margin: 0;
+        text-align: center;
+        border:0;
+        border-radius: 0;
+    }
+
+    .navbar__user__list-item:hover{
+        text-decoration:none;
+        cursor: pointer;
+        background-color: #132c33;
+        border: 0;
+    }
+    
+    .navbar__user__list-item:hover a{
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .navbar__options__list.active{
+        display: flex;
+    }
+
+    .navbar__user__list.active{
+        display: flex;
+    }
+
+    .main__content p{
+        word-wrap: break-word;
+        width: 100%;
+        margin: auto;
+    }
+}

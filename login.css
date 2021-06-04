@@ -1,0 +1,145 @@
+.main__login{
+    display: block;
+    margin: auto;
+    border: 1px solid rgba(81, 196, 211,0.75);
+    box-shadow: 5px 5px 5px rgba(81, 196, 211,0.25);
+    margin-top: 5%;
+    width: 30%;
+    background-color: white;
+}
+
+.main__login-title{
+    width: 100%;
+    font-family: 'Yellowtail', cursive;
+    color: #126e82;
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+.main__login-subtitle{
+    width: 100%;
+    margin: 0.5em;
+    text-align: left;
+    font-size: 0.8em;
+    color: #126e82;
+    font-weight: bold;
+}
+
+.main__login-input{
+    width: 90%;
+    float: left;
+    margin-left: 0.5em;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    border: none;
+    border-bottom: 2px solid #126e82;
+    outline: none;
+    background: transparent;
+}
+
+.main__login-button{
+    width: 90%;
+    margin: 0.5em 0 1.5em 0;
+    padding: 0.75em;
+    font-weight: bold;
+    color:white;
+    background-color: #126e82;
+    border: none;
+}
+
+.main__login-button:hover{
+    cursor: pointer;
+    background-color: #51c4d3;
+}
+
+.main__login-link{
+    display: block;
+    width: 100%;
+    font-size: 0.75em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    color: #126e82;
+}
+
+.main__login-link:hover{
+    text-decoration: underline;
+}
+
+.main__login-error{
+    display: none;
+    width: 100%;
+    font-size: 0.75em;
+    color: red;
+    text-align: left;
+    margin: 0 0 1em 0.5em;
+}
+
+.main__reset{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    background-color: white;
+    border: 1px solid rgba(81, 196, 211,0.75);
+    box-shadow: 5px 5px 5px rgba(81, 196, 211,0.25);
+}
+
+.main__reset-title{
+    width: 100%;
+    font-size: 2.5em;
+    color: #126e82;
+    font-family: 'Yellowtail', cursive;
+    font-weight: lighter;
+    margin-top: 1em;
+}
+
+.main__reset-subtitle{
+    width: 100%;
+    font-size: 1em;
+    color: #126e82;
+    font-weight: bold;
+}
+
+.main__reset-input{
+    width: 90%;
+    margin: auto;
+    padding: 1em;
+    border: none;
+    border-bottom: 2px solid #126e82;
+    outline: none;
+    background: transparent;
+}
+
+.main__reset-error{
+    display: none;
+    margin: 0.25em 0 0 1em;
+    color: red;
+    text-align: left;
+    font-size: 0.75em;
+}
+
+.main__reset-button{
+    width: 90%;
+    margin: 0.5em 0 1.5em 0;
+    padding: 0.75em;
+    font-weight: bold;
+    color:white;
+    background-color: #126e82;
+    border: none;
+}
+
+.main__reset-button:hover{
+    cursor: pointer;
+    background-color: #51c4d3;
+}
+
+@media (max-width:1024px){
+    .main__login{
+        width: 90%;
+    }
+
+    .main__reset{
+        width: 90%;
+    }
+}

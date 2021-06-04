@@ -1,0 +1,75 @@
+.main__content__newPrize-form{
+    width: 30%;
+    margin: auto;
+}
+
+.main__content__newPrize-block{
+    width: 100%;
+    display: block;
+    margin: 1em;
+    text-align: center;
+}
+
+.main__content__newPrize-block.input{
+    text-align: left;
+}
+
+.main__content__newPrize-text{
+    display: inline-block;
+    font-size: 0.8em;
+    color: #126e82;
+    font-weight: bold;
+}
+
+.main__content__newPrize-winners{
+    width: 3em;
+    text-align: center;
+}
+
+.main__content__newPrize-subtitle{
+    color: #126e82;
+}
+
+.main__content__newPrize-prize{
+    width: 30em;
+    height: 10em;
+}
+
+.main__content__newPrize-button{
+    padding: 0.5em;
+    font-size: 1em;
+    background: rgb(18,110,130);
+    background: linear-gradient(0deg, rgba(18,110,130,1) 29%, rgba(54,169,194,1) 100%);
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5%;
+    margin-bottom: 2.5%;
+    margin-top: 1em;
+}
+
+.main__content__newPrize-button:hover{
+    cursor: pointer;
+    background: rgb(54,169,194);
+    background: linear-gradient(0deg, rgba(54,169,194,1) 12%, rgba(18,110,130,1) 100%);
+}
+
+@media (max-width:1240px){
+    .main__content__newPrize-form{
+        width: 100%;
+    }
+
+    .main__content__newPrize-text{
+        width: 100%;
+        display: block;
+    }
+
+    .main__content__newPrize-block.input{
+        text-align: center;
+    }
+
+    .main__content__newPrize-prize{
+        width: 15em;
+    }
+}

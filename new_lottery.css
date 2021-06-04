@@ -1,0 +1,124 @@
+.main__content__newLottery-form{
+    width: 30%;
+    margin: auto;
+}
+
+.main__content__newLottery-block{
+    width: 100%;
+    display: block;
+    margin: 1em;
+    text-align: left;
+}
+
+.main__content__newLottery-text{
+    display: inline-block;
+    font-size: 0.8em;
+    color: #126e82;
+    font-weight: bold;
+}
+
+.main__content__newLottery-number{
+    width: 3em;
+    text-align: center;
+}
+
+#newLottery-subtitle{
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: #126e82;
+}
+
+#newLottery-table{
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#newLottery-table table th{
+    color: #126e82;
+}
+
+#newLottery-table table{
+    width: 100%;
+}
+
+#newLottery-createButton{
+    text-align: center;
+}
+
+.main__content__newLottery-addButton{
+    padding: 0.25em;
+    font-size: 1em;
+    background: rgb(18,110,130);
+    background: linear-gradient(0deg, rgba(18,110,130,1) 29%, rgba(54,169,194,1) 100%);
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+.main__content__newLottery-addButton:hover{
+    cursor: pointer;
+    background: rgb(54,169,194);
+    background: linear-gradient(0deg, rgba(54,169,194,1) 12%, rgba(18,110,130,1) 100%);
+}
+
+.main__content__newLottery-button{
+    padding: 0.5em;
+    font-size: 1em;
+    background: rgb(18,110,130);
+    background: linear-gradient(0deg, rgba(18,110,130,1) 29%, rgba(54,169,194,1) 100%);
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5%;
+    margin-bottom: 2.5%;
+    margin-top: 1em;
+}
+
+.main__content__newLottery-button:hover{
+    cursor: pointer;
+    background: rgb(54,169,194);
+    background: linear-gradient(0deg, rgba(54,169,194,1) 12%, rgba(18,110,130,1) 100%);
+}
+
+.main__content__newLottery-deleteButton{
+    padding: 0.25em;
+    font-size: 1em;
+    background: rgb(18,110,130);
+    background: linear-gradient(0deg, rgba(18,110,130,1) 29%, rgba(54,169,194,1) 100%);
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+.main__content__newLottery-deleteButton:hover{
+    cursor: pointer;
+    background: rgb(54,169,194);
+    background: linear-gradient(0deg, rgba(54,169,194,1) 12%, rgba(18,110,130,1) 100%);
+}
+
+@media (max-width:1220px){
+    .main__content__newLottery-form{
+        width: 100%;
+    }
+
+    .main__content__newLottery-block{
+        text-align: center;
+    }
+
+    .main__content__newLottery-text{
+        width: 100%;
+        display: block;
+    }
+
+    #newLottery-table table{
+        width: 80%;
+        margin: auto;
+    }
+}

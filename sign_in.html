@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotería</title>
+    <link rel="icon" href="img/dice_black.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <a href="index.html"><div class="navbar__logo-img"></div></a>
+            </div>
+            <a href="#" class="navbar__button">
+                <span class="navbar__button-line"></span>
+                <span class="navbar__button-line"></span>
+                <span class="navbar__button-line"></span>
+            </a>
+            <div class="navbar__options">
+                <ul class="navbar__options__list">
+                    <li class="navbar__options__list-item"><a href="lottery.html">Lotería</a></li>
+                    <li class="navbar__options__list-item"><a href="prizes.html">Sorteos</a></li>
+                </ul>
+            </div>
+            <div class="navbar__user">
+                <ul class="navbar__user__list">
+                    <li class="navbar__user__list-item"><a href="sign_in.html">Iniciar Sesión</a></li>
+                    <li class="navbar__user__list-item"><a href="sign_up.html">Registrarse</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__login">
+            <form class="main__login-form" method="POST">
+                <h2 class="main__login-title">Iniciar Sesión</h2>
+                <p class="main__login-subtitle">Correo electrónico</p>
+                <input type="email" name="email" placeholder="Ingrese su correo electrónico" class="main__login-input">
+                <p class="main__login-error">No ingreso un correo electrónico</p>
+                <p class="main__login-subtitle">Contraseña</p>
+                <input type="password" name="password" placeholder="Ingrese su contraseña" class="main__login-input">
+                <p class="main__login-error">No ingreso contraseña</p>
+                <input type="submit" name="submit" value="Iniciar Sesión" class="main__login-button" onclick="login();return false;">
+                <a href="./reset_password.html" class="main__login-link">¿Has olvidado tu contraseña?</a>
+                <a href="./sign_up.html" class="main__login-link">¿No posees cuenta? Regístrate</a>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo">
+            <div class="footer__logo-img"></div>
+        </div>
+        <div class="footer__contact">
+            <div class="footer__contact-title"><strong>Contacto:</strong></div>
+            <div class="footer__contact-text"><a href="mailto:ignacio.rene1994@gmail.com">ignacio.rene1994@gmail.com</a></div>
+        </div>
+        <div class="footer__social">
+            <div class="footer__social-text"><strong>Síguenos en nuestras redes sociales:</strong></div>
+            <div class="footer__social__icons">
+                <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; Lotería
+        </div>
+    </footer>
+    
+    <script src="main.js"></script>
+    <script src="login.js"></script>
+
+</body>
+</html>
